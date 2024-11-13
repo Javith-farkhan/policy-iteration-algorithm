@@ -55,7 +55,7 @@ To summarize, policy iteration iteratively improves the policy by alternating be
 ## POLICY IMPROVEMENT FUNCTION
 ### Name: Javith farkhan
 ### Register Number: 212221240017
-```
+```py
 def policy_improvement(V, P, gamma=1.0):
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
     # Write your code here to implement policy improvement algorithm
@@ -70,7 +70,7 @@ def policy_improvement(V, P, gamma=1.0):
 ## POLICY ITERATION FUNCTION
 ### Name: Javith farkhan
 ### Register Number: 212221240017
-```
+```py
 def policy_iteration(P, gamma=1.0,theta=1e-10):
   random_actions=np.random.choice(tuple(P[0].keys()),len(P))
   pi = lambda s: {s:a for s, a in enumerate(random_actions)}[s]
